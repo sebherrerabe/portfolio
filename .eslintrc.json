@@ -1,3 +1,13 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": "error",
+    "react/react-in-jsx-scope": "off",
+    "import/no-unused-modules": "error",
+    "prefer-arrow-callback": "error",
+    "arrow-body-style": ["error", "as-needed"],
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error"
+  }
 }
