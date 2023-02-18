@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`h-20 fixed z-10 w-full px-72 text-gray-200 py-8 flex transition-all duration-200 ease-in-out ${
+      className={`h-20 fixed z-10 w-full px-72 text-gray-200 py-8 flex transition-all duration-500 ease-in-out ${
         hasScrolled ? "bg-primary/80" : ""
       }`}
     >
@@ -28,7 +28,7 @@ const Navbar = () => {
         {pages.map((page) => (
           <li key={page.name}>
             <Link className={`cursor-pointer drop-shadow-2xl ${page.isActive ? "text-tertiary" : ""}`} href={page.href}>
-              // {page.name}
+              {`// ${page.name}`}
             </Link>
           </li>
         ))}

@@ -1,8 +1,7 @@
 {
   "extends": "next/core-web-vitals",
-  "plugins": ["prettier"],
+  "plugins": [],
   "rules": {
-    "prettier/prettier": "error",
     "react/react-in-jsx-scope": "off",
     "import/no-unused-modules": "error",
     "prefer-arrow-callback": "error",

@@ -9,9 +9,9 @@ interface Props {
 
 const buttonStyles = {
   primary:
-    "bg-gradient-to-br from-tertiary/95 to-primary/40 border border-tertiary text-quaternary px-12 py-2 font-bold rounded w-fit hover:from-tertiary/80 hover:to-primary/60 transition-all duration-200 ease-in-out",
+    "bg-gradient-to-br from-tertiary/95 to-primary/40 border border-tertiary text-quaternary px-12 py-2 font-bold rounded w-fit hover:from-tertiary/80 hover:to-primary/60 transition-all",
   secondary:
-    "border border-tertiary text-tertiary px-12 py-2 font-bold rounded w-fit hover:text-primary hover:bg-tertiary/80 transition-all duration-200 ease-in-out",
+    "border border-tertiary text-tertiary px-12 py-2 font-bold rounded w-fit hover:text-primary hover:bg-tertiary/80 transition-all",
   tertiary: "",
 };
 
