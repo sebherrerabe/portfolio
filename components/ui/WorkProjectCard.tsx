@@ -21,7 +21,7 @@ const WorkProjectCard = ({ project }: Props) => {
       <div className="grow bg-gray-700 rounded-b p-4 flex">
         <div className="flex flex-col">
           <Heading level={4} text={project.name} />
-          <Paragraph className="mt-2" level={3}>
+          <Paragraph className="mt-2 text-gray-400" level={3}>
             {project.category}
           </Paragraph>
         </div>
