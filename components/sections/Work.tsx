@@ -13,8 +13,8 @@ const Work = () => (
     </Paragraph>
     <WorkMainProject />
     <WorkOtherProjects />
-    <div className="w-full flex justify-end mt-4">
-      <a className="bg-primary underline cursor-pointer">View the archive</a>
+    <div className="w-full flex justify-end mt-8">
+      <a className="bg-tertiary px-2 text-gray-700 underline cursor-pointer">View the archive</a>
     </div>
   </Section>
 );
