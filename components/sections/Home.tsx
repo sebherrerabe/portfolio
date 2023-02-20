@@ -22,9 +22,9 @@ const Home = () => (
           </Button>
         </div>
       </div>
-      <div className="w-1/2 h-full relative overflow-hidden rounded-full border border-white/40 bg-primary/70">
+      <div className="w-1/2 h-full relative overflow-hidden rounded-full border border-white/40 bg-primary/20 backdrop-blur-[3px]">
         <HeroImage />
-        <div className="absolute h-full w-full bg-gradient-to-br from-white/5 to-white/50 " />
+        <div className="absolute h-full w-full bg-gradient-to-br from-white/5 to-white/50 backdrop-blur-[0.5px]" />
       </div>
     </div>
   </Section>
