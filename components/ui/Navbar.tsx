@@ -1,22 +1,8 @@
+import useNavbarScroll from "@/hooks/useNavbarScroll";
 import Link from "next/link";
-import { useEffect, useState } from "react";
 
 const Navbar = () => {
-  const [hasScrolled, setHasScrolled] = useState(false);
-
-  const [pages, setPages] = useState([
-    { name: "home", href: "/", isActive: true },
-    { name: "work", href: "#work", isActive: false },
-    { name: "about", href: "#about", isActive: false },
-    { name: "contact", href: "#contact", isActive: false },
-  ]);
-
-  useEffect(() => {
-    const handleScroll = () => setHasScrolled(window.scrollY > 300);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
+  const { pages, hasScrolled } = useNavbarScroll();
   return (
     <div
       className={`h-20 fixed z-10 w-full px-72 text-gray-200 py-8 flex transition-all duration-500 ease-in-out ${

@@ -12,7 +12,8 @@ const buttonStyles = {
     "bg-gradient-to-br from-tertiary/95 to-primary/40 border border-tertiary text-quaternary px-12 py-2 font-bold rounded w-fit hover:from-tertiary/80 hover:to-primary/60 transition-all",
   secondary:
     "border border-tertiary text-tertiary px-12 py-2 font-bold rounded w-fit hover:text-primary hover:bg-tertiary/80 transition-all",
-  tertiary: "",
+  tertiary:
+    "border border-primary text-primary px-6 text-sm py-2 font-bold rounded w-fit hover:text-white hover:bg-primary/80 transition-all",
 };
 
 const Button = ({ styleType = "primary", children, className, style }: Props) => (

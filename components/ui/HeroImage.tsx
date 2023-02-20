@@ -24,6 +24,7 @@ const HeroImage = () => {
       fill
       style={{ objectFit: "cover", filter: dropShadow }}
       alt="background"
+      priority
     />
   );
 };
