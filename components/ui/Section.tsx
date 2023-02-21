@@ -8,21 +8,28 @@ const styles = {
     div: "h-full w-full bg-gradient-to-b from-primary via-tertiary/10 to-primary px-72",
   },
   2: {
-    section: "w-full relative text-gray-200",
-    image: "-z-10 bg-primary",
-    div: "h-full w-full bg-gradient-to-b from-primary to-tertiary/10 px-72 pb-14",
+    section: "w-full relative text-gray-200 rounded-b-[200px]",
+    image: "-z-10 bg-primary rounded-b-[200px]",
+    div: "h-full w-full bg-gradient-to-b from-primary to-tertiary/10 px-72 pb-14 rounded-b-[200px]",
+  },
+  3: {
+    section: "w-full text-gray-200",
+    image: "",
+    div: "h-full w-full bg-quaternary px-72 pb-14",
   },
 };
 
 interface Props {
   children: ReactNode;
-  level?: 1 | 2;
+  level?: 1 | 2 | 3;
   id?: string;
 }
 
 const Section = ({ children, level = 1, id = "" }: Props) => (
   <section className={styles[level].section} id={id}>
-    <Image src="/bg.svg" className={styles[level].image} fill style={{ objectFit: "cover" }} alt="background" />
+    {styles[level].image && (
+      <Image src="/bg.svg" className={styles[level].image} fill style={{ objectFit: "cover" }} alt="background" />
+    )}
     <div className={styles[level].div}>{children}</div>
   </section>
 );
