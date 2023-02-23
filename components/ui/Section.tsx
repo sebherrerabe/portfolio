@@ -9,19 +9,24 @@ const styles = {
   },
   2: {
     section: "w-full relative text-gray-200 rounded-b-[200px]",
-    image: "-z-10 bg-primary rounded-b-[200px]",
-    div: "h-full w-full bg-gradient-to-b from-primary to-tertiary/10 px-72 pb-14 rounded-b-[200px]",
+    image: "bg-primary rounded-b-[200px]",
+    div: "h-full w-full bg-gradient-to-b from-primary to-tertiary/10 px-72 pb-14 rounded-b-[200px] relative",
   },
   3: {
     section: "w-full text-gray-200",
     image: "",
     div: "h-full w-full bg-quaternary px-72 pb-14",
   },
+  4: {
+    section: "w-full relative text-gray-200",
+    image: "bg-primary rounded-t-[200px]",
+    div: "h-full w-full bg-gradient-to-b from-primary via-tertiary/10 to-primary px-72 rounded-t-[200px] relative",
+  },
 };
 
 interface Props {
   children: ReactNode;
-  level?: 1 | 2 | 3;
+  level?: 1 | 2 | 3 | 4;
   id?: string;
 }
 

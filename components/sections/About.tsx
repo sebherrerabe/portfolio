@@ -24,16 +24,10 @@ const About = () => (
         </Button>
       </div>
       <div className="flex flex-col w-1/2 h-[30rem] relative justify-center items-center py-20">
-        <AboutImageCard
-          style={{ height: "200px", width: "150px", marginRight: "20rem", marginBottom: "14rem", transform: "rotate(-20deg)" }}
-        />
-        <AboutImageCard
-          style={{ height: "300px", width: "250px", marginRight: "20rem", marginTop: "10rem", transform: "rotate(-8deg)" }}
-        />
-        <AboutImageCard
-          style={{ height: "250px", width: "200px", marginLeft: "20rem", marginBottom: "10rem", transform: "rotate(15deg)" }}
-        />
-        <AboutImageCard style={{ height: "350px", width: "300px", transform: "rotate(10deg)" }} />
+        <AboutImageCard className="h-48 w-36 mr-56 mb-80 -rotate-12 shadow-xl" />
+        <AboutImageCard className="h-72 w-64 mr-56 mt-40 -rotate-6 shadow-xl" />
+        <AboutImageCard className="h-60 w-52 mb-48 ml-72 rotate-45 shadow-xl" />
+        <AboutImageCard className="h-96 w-80 rotate-12 shadow-2xl" />
       </div>
     </div>
   </Section>

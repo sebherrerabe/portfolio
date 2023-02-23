@@ -1,14 +1,12 @@
 import { CSSProperties } from "react";
 
 interface Props {
-  style?: CSSProperties;
+  className?: string;
 }
 
-const AboutImageCard = ({ style }: Props) => (
-  <div style={style} className="bg-gradient-to-br from-gray-50 rounded-sm to-gray-200 shadow-2xl p-[3%] absolute">
+const AboutImageCard = ({ className }: Props) => (
+  <div className={`bg-gradient-to-br from-gray-50 rounded-sm to-gray-200 p-[3%] absolute ${className}`}>
     <div className="bg-gray-400 w-full aspect-square"></div>
-    <div className="h-20 w-full">
-    </div>
   </div>
 );
 

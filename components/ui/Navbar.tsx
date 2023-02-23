@@ -5,7 +5,7 @@ const Navbar = () => {
   const { pages, hasScrolled } = useNavbarScroll();
   return (
     <div
-      className={`h-20 fixed z-10 w-full px-72 text-gray-200 py-8 flex transition-all duration-500 ease-in-out ${
+      className={`h-20 fixed z-50 w-full px-72 text-gray-200 py-8 flex transition-all duration-500 ease-in-out ${
         hasScrolled ? "bg-primary/80" : ""
       }`}
     >
@@ -19,7 +19,7 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-    </div>
+    </div>                  
   );
 };
 

@@ -1,3 +1,5 @@
+import convertNegToPos from "@/utils/convertNegToPos";
+import debounce from "@/utils/debounce";
 import { useEffect, useState } from "react";
 
 const useNavbarScroll = () => {
@@ -10,18 +12,27 @@ const useNavbarScroll = () => {
     { name: "contact", href: "#contact", isActive: false },
   ]);
 
+  const handleScroll = () => {
+    const sections = document.querySelectorAll("section");
+    const values = Array.from(sections).reduce(
+      (acc, section) => ({ [section.id]: convertNegToPos(section.offsetTop - window.scrollY - 100), ...acc }),
+      {} as { [key: string]: number }
+    );
+    const minValue = Math.min(...Object.values(values));
+    const activePage = Object.keys(values).find((key) => values[key] === minValue);
+    setPages((prevPages) =>
+      prevPages.map((page) => ({
+        ...page,
+        isActive: page.name === activePage,
+      }))
+    );
+    setHasScrolled(window.scrollY > 300);
+  };
+
   useEffect(() => {
-    const handleScroll = () => {
-      const sections = document.querySelectorAll("section");
-      sections.forEach(
-        (section) =>
-          window.scrollY > section.offsetTop - 100 &&
-          setPages((prev) => prev.map((page) => ({ ...page, isActive: page.name === section.id })))
-      );
-      setHasScrolled(window.scrollY > 300);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    const debouncedHandleScroll = debounce(handleScroll, 100);
+    window.addEventListener("scroll", debouncedHandleScroll);
+    return () => window.removeEventListener("scroll", debouncedHandleScroll);
   }, []);
 
   return { pages, hasScrolled };

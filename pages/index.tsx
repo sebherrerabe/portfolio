@@ -5,6 +5,7 @@ import Head from "next/head";
 import { JetBrains_Mono } from "@next/font/google";
 import Work from "@/components/sections/Work";
 import About from "@/components/sections/About";
+import Contact from "@/components/sections/Contact";
 
 const jetBrainsMono = JetBrains_Mono({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ const Index = () => (
       <Home />
       <Work />
       <About />
+      <Contact />
     </main>
   </>
 );

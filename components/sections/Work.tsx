@@ -5,7 +5,7 @@ import WorkMainProject from "./WorkMainProject";
 import WorkOtherProjects from "./WorkOtherProjects";
 
 const Work = () => (
-  <div className="bg-quaternary -z-20 relative">
+  <div className="bg-quaternary">
     <Section level={2} id="work">
       <Title text="// work" type="A" />
       <Paragraph className="mt-10 text-gray-300">
