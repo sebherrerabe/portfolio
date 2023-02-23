@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ReactNode } from "react";
+import { forwardRef, ReactNode } from "react";
 
 const styles = {
   1: {
@@ -30,13 +30,15 @@ interface Props {
   id?: string;
 }
 
-const Section = ({ children, level = 1, id = "" }: Props) => (
-  <section className={styles[level].section} id={id}>
+const Section = forwardRef<HTMLElement, Props>(({ children, level = 1, id = "" }, ref) => (
+  <section className={styles[level].section} id={id} ref={ref}>
     {styles[level].image && (
       <Image src="/bg.svg" className={styles[level].image} fill style={{ objectFit: "cover" }} alt="background" />
     )}
     <div className={styles[level].div}>{children}</div>
   </section>
-);
+));
+
+Section.displayName = "Section";
 
 export default Section;
