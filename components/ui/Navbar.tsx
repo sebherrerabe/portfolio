@@ -5,8 +5,8 @@ const Navbar = () => {
   const { pages, hasScrolled } = useNavbarScroll();
   return (
     <div
-      className={`h-20 fixed z-50 w-full px-72 text-gray-200 py-8 flex transition-all duration-500 ease-in-out border-b  ${
-        hasScrolled ? "bg-gradient-to-b from-primary to-primary/90 border-b-tertiary" : "border-b-transparent"
+      className={`h-20 fixed z-50 w-full px-72 text-gray-200 py-8 flex transition-all duration-500 ease-in-out border-b bg-gradient-to-b from-primary via-primary to-primary/40  ${
+        hasScrolled ? "border-b-tertiary" : "border-b-transparent"
       }`}
     >
       <span className="mr-40">@sebherrera.tech</span>
@@ -19,7 +19,7 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-    </div>                  
+    </div>
   );
 };
 
