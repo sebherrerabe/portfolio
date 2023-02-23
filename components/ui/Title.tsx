@@ -8,11 +8,11 @@ interface Props {
 const types = {
   A: {
     text: "text-transparent bg-clip-text bg-gradient-to-r from-gray-200 via-gray-200 to-tertiary",
-    div: "grow h-[1px] bg-tertiary ml-4",
+    div: "grow h-[1px] bg-gradient-to-r from-tertiary to-tertiary/5 ml-4",
   },
   B: {
     text: "text-transparent bg-clip-text bg-gradient-to-r from-gray-700 via-gray-700 to-primary",
-    div: "grow h-[1px] bg-primary ml-4",
+    div: "grow h-[1px] bg-gradient-to-r from-primary to-primary/5 ml-4",
   },
 };
 

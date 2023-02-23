@@ -3,9 +3,9 @@ import { forwardRef, ReactNode } from "react";
 
 const styles = {
   1: {
-    section: "w-full h-screen relative text-gray-200",
+    section: "w-full h-[80vh] lg:h-screen relative text-gray-200 overflow-hidden",
     image: "-z-10 bg-primary",
-    div: "h-full w-full bg-gradient-to-b from-primary via-tertiary/10 to-primary px-72",
+    div: "h-full w-full bg-gradient-to-b from-primary via-tertiary/10 to-primary px-2 lg:px-72",
   },
   2: {
     section: "w-full relative text-gray-200 rounded-b-[200px]",
