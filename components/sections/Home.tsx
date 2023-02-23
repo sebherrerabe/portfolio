@@ -16,7 +16,7 @@ const Home = () => (
           mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
         </Paragraph>
         <div className="flex">
-          <Button className="mt-10">Something</Button>
+          <Button className="mt-10 hover:shadow-2xl">Something</Button>
           <Button className="mt-10 ml-8" styleType="secondary">
             Something
           </Button>
@@ -24,7 +24,7 @@ const Home = () => (
       </div>
       <div className="w-1/2 h-full relative overflow-hidden rounded-full border border-white/40 bg-primary/20 backdrop-blur-[3px]">
         <HeroImage />
-        <div className="absolute h-full w-full bg-gradient-to-br from-quaternary/5 to-quaternary/40 backdrop-blur-[0.3px]" />
+        <div className="absolute h-full w-full bg-gradient-to-br from-quaternary/5 to-quaternary/30 backdrop-blur-[0.5px]" />
       </div>
     </div>
   </Section>
