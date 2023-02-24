@@ -31,7 +31,7 @@ const HeroImage = ({ inView }: Props) => {
         src="/seb.png"
         className="transition-all duration-1000 opacity-90 lg:opacity-100 translate-x-1/2 lg:translate-x-0 rounded-b-full lg:rounded-b-none"
         fill
-        style={{ objectFit: "cover", filter: dropShadow }}
+        style={{ objectFit: "contain", filter: dropShadow }}
         alt="background"
         priority
       />
