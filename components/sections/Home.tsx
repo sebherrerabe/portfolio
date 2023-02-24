@@ -13,7 +13,7 @@ const Home = () => {
     <Section id="home" ref={ref}>
       <div className="min-h-screen lg:pt-20 flex items-center w-full relative">
         <MotionComponent inView={inView} variant="translate" className="w-full lg:w-1/2 h-full flex flex-col justify-center lg:pr-4">
-          <Heading level={1} text="Where there’s problem, there’s also a solution." />
+          <Heading level={1} text="If there’s problem, there’s a solution." />
           <Heading level={3} className="text-tertiary mt-6 lg:mt-10" text="Seb Herrera" />
           <Heading level={5} className="text-secondary" text="Full Stack Developer" />
           <Paragraph className="mt-6 lg:mt-10 text-gray-300">
