@@ -13,14 +13,14 @@ const Navbar = () => {
         <FontAwesomeIcon
           icon={faBars}
           size="2x"
-          className={`fixed top-4 left-4 rounded text-gray-200 z-40 border-b bg-gradient-to-b from-primary via-primary to-primary/90 ${
-            hasScrolled ? "border-b-tertiary/90" : "border-b-transparent"
+          className={`fixed top-4 left-4 rounded text-gray-200 z-40 lg:border-b bg-gradient-to-b from-primary via-primary to-primary/90 p-2 ${
+            hasScrolled ? "lg:border-b-tertiary/90" : "border-b-transparent"
           }`}
           onClick={() => setIsNavbarOpen(true)}
         />
       </div>
       <div
-        className={`lg:h-20 rounded lg:rounded-none fixed z-[10000] w-full px-4 lg:px-72 text-gray-200 py-8 flex flex-col lg:flex-row transition-all duration-500 ease-in-out rounded-b lg:rounded-b-none border-b bg-gradient-to-b from-primary via-primary to-primary/90 ${
+        className={`lg:h-20 rounded lg:rounded-none fixed z-[10000] w-full px-4 lg:px-10 xl:px-72 text-gray-200 py-8 flex flex-col lg:flex-row transition-all duration-500 ease-in-out rounded-b lg:rounded-b-none border-b bg-gradient-to-b from-primary via-primary to-primary/90 ${
           hasScrolled ? "border-b-tertiary/90" : "border-b-tertiary/90 lg:border-b-transparent"
         } ${isNavbarOpen ? "top-0" : "-top-full lg:top-0"}`}
       >
@@ -31,7 +31,11 @@ const Navbar = () => {
               key={page.name}
               className={`py-4 lg:py-0 border-b lg:border-none ${page.isActive ? "border-b-tertiary" : "border-b-gray-300"} `}
             >
-              <Link className={`cursor-pointer drop-shadow-2xl ${page.isActive ? "text-tertiary" : ""}`} href={page.href}>
+              <Link
+                className={`cursor-pointer drop-shadow-2xl ${page.isActive ? "text-tertiary" : ""}`}
+                href={page.href}
+                onClick={() => setIsNavbarOpen(false)}
+              >
                 {`// ${page.name}`}
               </Link>
             </li>

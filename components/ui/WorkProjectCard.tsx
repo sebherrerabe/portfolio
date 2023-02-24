@@ -7,17 +7,18 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 interface Props {
   project: IProject;
+  className?: string;
 }
 
-const WorkProjectCard = ({ project }: Props) => {
+const WorkProjectCard = ({ project, className }: Props) => {
   const [isHovering, setIsHovering] = useState(false);
   return (
     <div
-      className="shadow-xl hover:shadow-2xl transition-all duration-200 ease-in-out outline outline-transparent hover:outline-gray-300 rounded flex flex-col cursor-pointer"
+      className={`shadow-xl hover:shadow-2xl transition-all duration-200 ease-in-out outline outline-transparent hover:outline-gray-300 rounded flex flex-col cursor-pointer ${className}`}
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
     >
-      <div className="w-full h-56 bg-gray-300 rounded-t"></div>
+      <div className="w-full h-48 md:h-40 lg:h-56 bg-gray-300 rounded-t"></div>
       <div className="grow bg-gray-700 rounded-b p-4 flex">
         <div className="flex flex-col">
           <Heading level={4} text={project.name} />
