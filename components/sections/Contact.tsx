@@ -19,7 +19,7 @@ const Contact = () => {
             porro explicabo eos magnam omnis sed illo delectus error culpa earum, tempore nostrum quisquam facilis?
           </Paragraph>
         </MotionComponent>
-        <MotionComponent inView={inView} variant="opacity" className="flex w-full justify-between mt-10 pb-20">
+        <MotionComponent inView={inView} variant="opacity" className="flex flex-col md:flex-row gap-8 md:gap-0 w-full justify-between mt-10 pb-20">
           <ContactCard link="www.google.com" icon={faWhatsapp} text="WhatsApp" />
           <ContactCard link="www.google.com" icon={faEnvelope} text="E-mail" />
           <ContactCard link="www.google.com" icon={faLinkedin} text="LinkedIn" />

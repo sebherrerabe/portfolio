@@ -4,24 +4,24 @@ import { forwardRef, ReactNode } from "react";
 
 const styles = {
   1: {
-    section: "w-full h-screen relative text-gray-200 overflow-hidden",
+    section: "w-full h-screen relative text-gray-200 overflow-hidden flex items-center sm:items-start",
     image: "-z-10 bg-primary",
     div: `h-full w-full bg-gradient-to-b from-primary via-tertiary/10 to-primary ${mainPaddingX}`,
   },
   2: {
-    section: "w-full relative text-gray-200 rounded-b-[100px] lg:rounded-b-[200px]",
-    image: "bg-primary rounded-b-[100px] lg:rounded-b-[200px]",
-    div: `h-full w-full bg-gradient-to-b from-primary to-tertiary/10 ${mainPaddingX} pb-24 lg:pb-14 rounded-b-[100px] lg:rounded-b-[200px] relative`,
+    section: "w-full relative text-gray-200 rounded-b-[100px] xl:rounded-b-[200px]",
+    image: "bg-primary rounded-b-[100px] xl:rounded-b-[200px]",
+    div: `h-full w-full bg-gradient-to-b from-primary to-tertiary/10 ${mainPaddingX} pb-24 lg:pb-14 rounded-b-[100px] xl:rounded-b-[200px] relative`,
   },
   3: {
     section: "w-full text-gray-200",
     image: "",
-    div: `h-full w-full bg-quaternary ${mainPaddingX} pb-14`,
+    div: `h-full w-full bg-quaternary ${mainPaddingX} pb-10 lg:pb-14`,
   },
   4: {
     section: "w-full relative text-gray-200",
-    image: "bg-primary rounded-t-[200px]",
-    div: `h-full w-full bg-gradient-to-b from-primary via-tertiary/10 to-primary ${mainPaddingX} rounded-t-[200px] relative`,
+    image: "bg-primary rounded-t-[100px] xl:rounded-t-[200px]",
+    div: `h-full w-full bg-gradient-to-b from-primary via-tertiary/10 to-primary ${mainPaddingX} rounded-t-[100px] xl:rounded-t-[200px] relative`,
   },
 };
 

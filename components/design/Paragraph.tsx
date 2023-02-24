@@ -8,9 +8,9 @@ interface Props {
 
 const Paragraph = ({ level = 1, className = "", children }: Props) => {
   const paragraphs = {
-    1: "text-sm lg:text-base",
-    2: "text-xs lg:text-sm",
-    3: "text-[0.65rem] lg:text-xs",
+    1: "text-xs sm:text-sm lg:text-base",
+    2: "text-[0.65rem] sm:text-xs lg:text-sm",
+    3: "text-[0.55rem] sm:text-[0.65rem] lg:text-xs",
   };
 
   return <p className={`${paragraphs[level]}  ${className}`}>{children}</p>;

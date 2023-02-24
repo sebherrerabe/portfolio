@@ -11,7 +11,7 @@ const WorkOtherProjects = ({ inView }: Props) => (
       <WorkProjectCard project={{ slug: "seb-d", name: "Test project", category: "Category" }} />
       <WorkProjectCard project={{ slug: "seb-d", name: "Test project", category: "Category" }} />
       <WorkProjectCard project={{ slug: "seb-d", name: "Test project", category: "Category" }} />
-      <WorkProjectCard project={{ slug: "seb-d", name: "Test project", category: "Category" }} className="hidden xl:flex" />
+      <WorkProjectCard project={{ slug: "seb-d", name: "Test project", category: "Category" }} className="md:hidden xl:flex" />
     </div>
     <div className="w-full flex justify-end mt-8">
       <a className="bg-quaternary px-2 text-sm lg:text-base text-gray-700 underline cursor-pointer ">View the archive</a>

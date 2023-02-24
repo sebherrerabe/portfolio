@@ -13,7 +13,7 @@ const Navbar = () => {
         <FontAwesomeIcon
           icon={faBars}
           size="2x"
-          className={`fixed top-4 left-4 rounded text-gray-200 z-40 lg:border-b bg-gradient-to-b from-primary via-primary to-primary/90 p-2 ${
+          className={`fixed top-4 left-4 rounded text-gray-200 z-40 lg:border-b bg-gradient-to-b from-primary via-primary to-primary/90 px-2 py-1 ${
             hasScrolled ? "lg:border-b-tertiary/90" : "border-b-transparent"
           }`}
           onClick={() => setIsNavbarOpen(true)}
