@@ -25,11 +25,11 @@ const HeroImage = ({ inView }: Props) => {
     <MotionComponent
       inView={inView}
       variant="opacity"
-      className="w-full lg:w-1/2 h-[80%] md:h-[88vh] top-0 absolute -z-10 lg:z-0 lg:relative lg:overflow-hidden lg:rounded-full border border-white/20 lg:bg-primary/20 lg:backdrop-blur-[3px] flex"
+      className="w-[200%] md:w-full lg:w-1/2 aspect-square absolute -z-10 lg:z-0 lg:relative lg:overflow-hidden lg:rounded-full border border-white/20 lg:bg-primary/20 lg:backdrop-blur-[3px] flex"
     >
       <Image
         src="/seb.png"
-        className="transition-all duration-1000 opacity-90 lg:opacity-100 translate-x-1/2 lg:translate-x-0 rounded-b-full lg:rounded-b-none"
+        className="transition-all duration-1000 opacity-90 lg:opacity-100 md:translate-x-1/2 lg:translate-x-0 rounded-b-full lg:rounded-b-none"
         fill
         style={{ objectFit: "contain", filter: dropShadow }}
         alt="background"
