@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
-import { mainPaddingX } from "@/constants/styles";
 
 const Navbar = () => {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
@@ -21,7 +20,7 @@ const Navbar = () => {
         />
       </div>
       <div
-        className={`lg:h-20 rounded lg:rounded-none fixed z-[10000] w-full  text-gray-200 py-8 flex flex-col lg:flex-row transition-all duration-500 ease-in-out rounded-b lg:rounded-b-none border-b bg-gradient-to-b from-primary via-primary to-primary/90 ${mainPaddingX} ${
+        className={`lg:h-20 rounded lg:rounded-none fixed z-[10000] w-full px-2 sm:px-4 lg:px-10 xl:px-72 text-gray-200 py-8 flex flex-col lg:flex-row transition-all duration-500 ease-in-out rounded-b lg:rounded-b-none border-b bg-gradient-to-b from-primary via-primary to-primary/90 ${
           hasScrolled ? "border-b-tertiary/90" : "border-b-tertiary/90 lg:border-b-transparent"
         } ${isNavbarOpen ? "top-0" : "-top-full lg:top-0"}`}
       >
