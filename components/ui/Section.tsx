@@ -4,9 +4,9 @@ import { forwardRef, ReactNode } from "react";
 
 const styles = {
   1: {
-    section: "w-full h-screen relative text-gray-200 overflow-hidden flex items-center sm:items-start",
+    section: "w-full min-h-screen relative text-gray-200 overflow-hidden flex items-center sm:items-start",
     image: "-z-10 bg-primary",
-    div: `h-full w-full bg-gradient-to-b from-primary via-tertiary/10 to-primary ${mainPaddingX}`,
+    div: `min-h-screen w-full bg-gradient-to-b from-primary via-tertiary/10 to-primary ${mainPaddingX}`,
   },
   2: {
     section: "w-full relative text-gray-200 rounded-b-[100px] xl:rounded-b-[200px]",
