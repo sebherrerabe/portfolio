@@ -9,19 +9,19 @@ const styles = {
     div: `min-h-screen w-full bg-gradient-to-b from-primary via-tertiary/10 to-primary ${mainPaddingX}`,
   },
   2: {
-    section: "w-full relative text-gray-200 rounded-b-[100px] xl:rounded-b-[200px]",
-    image: "bg-primary rounded-b-[100px] xl:rounded-b-[200px]",
-    div: `h-full w-full bg-gradient-to-b from-primary to-tertiary/10 ${mainPaddingX} pb-24 lg:pb-14 rounded-b-[100px] xl:rounded-b-[200px] relative`,
+    section: "w-full relative text-gray-200",
+    image: "bg-primary",
+    div: `h-full w-full bg-gradient-to-b from-primary via-tertiary/10 to-quaternary ${mainPaddingX} pb-24 lg:pb-14 relative`,
   },
   3: {
     section: "w-full text-gray-200",
     image: "",
-    div: `h-full w-full bg-quaternary ${mainPaddingX} pb-10 lg:pb-14`,
+    div: `h-full w-full bg-quaternary ${mainPaddingX} py-10 lg:py-14`,
   },
   4: {
     section: "w-full relative text-gray-200",
-    image: "bg-primary rounded-t-[100px] xl:rounded-t-[200px]",
-    div: `h-full w-full bg-gradient-to-b from-primary via-tertiary/10 to-primary ${mainPaddingX} rounded-t-[100px] xl:rounded-t-[200px] relative`,
+    image: "bg-primary",
+    div: `border-t border-t-tertiary h-full w-full bg-gradient-to-b from-primary via-tertiary/10 to-primary ${mainPaddingX} relative`,
   },
 };
 
